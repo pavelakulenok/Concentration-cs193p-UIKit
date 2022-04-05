@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		90AF87D427FC4BB900403686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF87D327FC4BB900403686 /* AppDelegate.swift */; };
 		90AF87D627FC4BB900403686 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF87D527FC4BB900403686 /* SceneDelegate.swift */; };
-		90AF87D827FC4BB900403686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF87D727FC4BB900403686 /* ViewController.swift */; };
-		90AF87DB27FC4BB900403686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90AF87D927FC4BB900403686 /* Main.storyboard */; };
+		90AF87D827FC4BB900403686 /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF87D727FC4BB900403686 /* ConcentrationViewController.swift */; };
+		90AF87DB27FC4BB900403686 /* ConcentrationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90AF87D927FC4BB900403686 /* ConcentrationViewController.storyboard */; };
 		90AF87DD27FC4BBA00403686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AF87DC27FC4BBA00403686 /* Assets.xcassets */; };
 		90AF87E027FC4BBA00403686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90AF87DE27FC4BBA00403686 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +19,8 @@
 		90AF87D027FC4BB900403686 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AF87D327FC4BB900403686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90AF87D527FC4BB900403686 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90AF87D727FC4BB900403686 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		90AF87DA27FC4BB900403686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90AF87D727FC4BB900403686 /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
+		90AF87DA27FC4BB900403686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ConcentrationViewController.storyboard; sourceTree = "<group>"; };
 		90AF87DC27FC4BBA00403686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90AF87DF27FC4BBA00403686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90AF87E127FC4BBA00403686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +56,31 @@
 		90AF87D227FC4BB900403686 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				90AF87D327FC4BB900403686 /* AppDelegate.swift */,
-				90AF87D527FC4BB900403686 /* SceneDelegate.swift */,
-				90AF87D727FC4BB900403686 /* ViewController.swift */,
-				90AF87D927FC4BB900403686 /* Main.storyboard */,
-				90AF87DC27FC4BBA00403686 /* Assets.xcassets */,
-				90AF87DE27FC4BBA00403686 /* LaunchScreen.storyboard */,
+				90AF87E927FC4C1D00403686 /* Scenes */,
+				90AF87E727FC4BFE00403686 /* Supporting files */,
 				90AF87E127FC4BBA00403686 /* Info.plist */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		90AF87E727FC4BFE00403686 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				90AF87D327FC4BB900403686 /* AppDelegate.swift */,
+				90AF87D527FC4BB900403686 /* SceneDelegate.swift */,
+				90AF87DC27FC4BBA00403686 /* Assets.xcassets */,
+				90AF87DE27FC4BBA00403686 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		90AF87E927FC4C1D00403686 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				90AF87D727FC4BB900403686 /* ConcentrationViewController.swift */,
+				90AF87D927FC4BB900403686 /* ConcentrationViewController.storyboard */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,7 @@
 			files = (
 				90AF87E027FC4BBA00403686 /* LaunchScreen.storyboard in Resources */,
 				90AF87DD27FC4BBA00403686 /* Assets.xcassets in Resources */,
-				90AF87DB27FC4BB900403686 /* Main.storyboard in Resources */,
+				90AF87DB27FC4BB900403686 /* ConcentrationViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90AF87D827FC4BB900403686 /* ViewController.swift in Sources */,
+				90AF87D827FC4BB900403686 /* ConcentrationViewController.swift in Sources */,
 				90AF87D427FC4BB900403686 /* AppDelegate.swift in Sources */,
 				90AF87D627FC4BB900403686 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +163,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		90AF87D927FC4BB900403686 /* Main.storyboard */ = {
+		90AF87D927FC4BB900403686 /* ConcentrationViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				90AF87DA27FC4BB900403686 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ConcentrationViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		90AF87DE27FC4BBA00403686 /* LaunchScreen.storyboard */ = {
@@ -292,7 +308,7 @@
 				INFOPLIST_FILE = Concentration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ConcentrationViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +336,7 @@
 				INFOPLIST_FILE = Concentration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = ConcentrationViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
